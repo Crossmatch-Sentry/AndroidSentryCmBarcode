@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item android:id="@+id/menu_test" android:title="@string/test" android:orderInCategory="2">
+        <menu>
+        	<item android:id="@+id/menu_commandStress" android:title="@string/stresscommand"></item>
+        	<item android:id="@+id/menu_commandSupported" android:title="@string/supportedcommand"></item>
+        	</menu>
+    </item>    
+    
+</menu>

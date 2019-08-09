@@ -1,0 +1,6 @@
+include ':cmbcrbarcode', ':libbarcode-release', ':barcode_scanner_library_v2.4.2.0'
+/*
+ * Copyright (c) 2019. Crossmatch. All rights reserved
+ *
+ */
+

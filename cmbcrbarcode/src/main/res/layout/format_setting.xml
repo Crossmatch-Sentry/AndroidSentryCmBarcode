@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/formatbarcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@+string/barcodedefaultformat" >
+        </TextView>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@android:color/white" />
+
+        <TextView
+            android:id="@+id/txtAimSymbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@+string/aimSymbolTitle" >
+        </TextView>
+
+        <RadioGroup
+            android:id="@+id/radioGroupFormatAimSymbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radioButtonFormatNone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:text="@string/formatNone" />
+
+            <RadioButton
+                android:id="@+id/radioButtonFormatAim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/formatAim" />
+
+            <RadioButton
+                android:id="@+id/radioButtonFormatSymbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/formatSymbol" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@android:color/white" />
+
+        <TextView
+            android:id="@+id/txtSuffixPrefixl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@+string/suffixPrefixTitle" >
+        </TextView>
+
+        <RadioGroup
+            android:id="@+id/radioGroupFormatSuffixPrefix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radioButtonFormatSuffixPrefixNone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:text="@string/formatSuffixPrefixNone" />
+
+            <RadioButton
+                android:id="@+id/radioButtonFormatPrefix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/formatPrefix" />
+
+            <RadioButton
+                android:id="@+id/radioButtonFormatSuffix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/formatSuffix" />
+
+            <RadioButton
+                android:id="@+id/radioButtonFormatSuffixPrefixBoth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:text="@string/formatSuffixPrefixBoth" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@android:color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txtPrefixValueTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@+string/PrefixCharValue" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/txtPrefixValue"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:digits="0123456789"
+                android:inputType="numberDecimal"
+                android:text="@string/cr" />
+            
+                        <Button
+                android:id="@+id/btnSetPrefixValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/set_value" />
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txtSuffixValueTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@+string/SuffixCharValue" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/txtSuffixValue"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:digits="0123456789"
+                android:inputType="numberDecimal"
+                android:text="@string/cr" />
+            
+            <Button
+                android:id="@+id/btnSetSuffixValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/set_value" />
+            </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@android:color/white" />
+    </LinearLayout>
+
+</ScrollView>

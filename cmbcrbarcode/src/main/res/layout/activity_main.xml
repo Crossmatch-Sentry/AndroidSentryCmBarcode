@@ -1,0 +1,198 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".LinearLayout" >
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/hsvButtons"
+        android:layout_alignParentTop="true"
+        android:paddingTop="10dp"
+        android:scrollbars="vertical"
+        android:text="@string/empty"
+        android:textSize="30sp" />
+
+    <RelativeLayout
+        android:id="@+id/scanLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom" >
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@android:color/white" />
+
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/line1"
+            android:text="@string/empty" />
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_below="@+id/resultText"
+            android:background="@android:color/white" />
+
+        <LinearLayout
+            android:id="@+id/layoutTrigger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/line2"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnScanStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/scanStart" />
+
+            <Button
+                android:id="@+id/btnScanStop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/scanStop" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupScanType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/radioButtonMainTrigger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:text="@string/triggerManual" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonMainAuto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/scanAuto" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonMainContinuous"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/scanContinuous" />
+            </RadioGroup>
+        </LinearLayout>
+    </RelativeLayout>
+
+<!--     <ToggleButton -->
+<!--         android:id="@+id/toggleButtonPrefixSuffix" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_above="@+id/optionsLayout" -->
+<!--         android:layout_alignParentLeft="true" -->
+<!--         android:layout_marginLeft="39dp" -->
+<!--         android:text="@string/prefixsuffix" -->
+<!--         android:textOn="@string/prefixsuffixOn"  -->
+<!--         android:textOff="@string/prefixsuffixOff"  -->
+<!--         android:checked="false"/> -->
+    
+    <View
+       	android:id="@+id/line3"
+       	android:layout_width="fill_parent"
+	    android:layout_height="1dip"
+        android:layout_above="@+id/hsvButtons"
+        android:background="@android:color/white" />
+    
+    <HorizontalScrollView 
+        android:id="@+id/hsvButtons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_above="@+id/scanLayout"
+        android:fillViewport="true" >
+        
+    <LinearLayout 
+        android:id="@+id/optionsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:scrollbars="horizontal" >
+
+        	<Button
+                android:id="@+id/btnDevice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/optiondevice" />
+
+        	<Button
+                android:id="@+id/btnBarcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/barcode" />
+        	
+        	<Button
+                android:id="@+id/btnFormat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/optionformat" />
+
+        	<Button
+                android:id="@+id/btnLighting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/optionlighting" />
+
+        	<Button
+                android:id="@+id/btnAiming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/aiming" />
+        	
+        	<Button
+                android:id="@+id/btnAudio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/audio" />
+
+        	<Button
+                android:id="@+id/btnHaptic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/haptic" />
+        		
+        	<Button
+                android:id="@+id/btnRaw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/raw" />
+
+        	<Button
+                android:id="@+id/btnPower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/power" />
+        	
+        	<Button
+                android:id="@+id/btnVersion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/version" />
+        	
+        	<Button
+                android:id="@+id/btnReset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/resetdefaults" />
+        					
+    </LinearLayout>
+    </HorizontalScrollView>
+            
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ProgressBar
+        android:id="@+id/progressBarSent"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="20dp"
+        android:maxHeight="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/sent" />
+
+    <TextView
+        android:id="@+id/textSent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/progressBarSent"
+        />
+    
+    <ProgressBar
+        android:id="@+id/progressBarReceived"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textSent"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/received" />
+    
+    <TextView
+        android:id="@+id/textRec"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/progressBarReceived"
+        />
+
+    <Button
+        android:id="@+id/btnCsStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="65dp"
+        android:layout_marginLeft="29dp"
+        android:text="@string/start" />
+
+    <Button
+        android:id="@+id/btCsStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnCsStart"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="66dp"
+        android:text="@string/stop" />
+
+</RelativeLayout>

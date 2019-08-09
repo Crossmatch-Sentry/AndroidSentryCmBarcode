@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/lightingRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp" >
+
+        <RadioButton
+            android:id="@+id/radioButtonOn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lightingOn"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textViewOnText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lightingOnText" />
+
+        <RadioButton
+            android:id="@+id/radioButtonOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lightingOff"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textViewOffText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lightingOffText" />
+
+    </RadioGroup>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@android:color/white" />
+
+    <RadioGroup
+        android:id="@+id/illuminationRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp" >
+
+        <RadioButton
+            android:id="@+id/radioButtonLow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lightingLow"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textViewLowText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lightingLowText" />
+
+        <RadioButton
+            android:id="@+id/radioButtonHigh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lightingHigh"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textViewHighText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lightingHighText" />
+    </RadioGroup>
+
+</LinearLayout>

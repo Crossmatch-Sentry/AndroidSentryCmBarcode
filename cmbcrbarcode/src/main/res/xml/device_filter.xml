@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 0x05e0 / 0x1900: Symbol Bar Code Scanner -->
+    <usb-device vendor-id="1504" product-id="6400" />
+    
+</resources>
