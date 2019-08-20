@@ -9,7 +9,7 @@
         android:id="@+id/txtrawoutput"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/hsvButtons"
+        android:layout_above="@+id/scanLayout"
         android:layout_alignParentTop="true"
         android:paddingTop="10dp"
         android:scrollbars="vertical"
