@@ -8,6 +8,14 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 28
 
+    signingConfigs {
+        config {
+            keyAlias 'key0'
+            keyPassword 'LiveScan1'
+            storeFile file('../keystore.jks')
+            storePassword 'LiveScan1'
+        }
+    }
 
     defaultConfig {
         applicationId "com.crossmatch.cmbcrbarcode"
@@ -24,6 +32,7 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
         }
     }
 
