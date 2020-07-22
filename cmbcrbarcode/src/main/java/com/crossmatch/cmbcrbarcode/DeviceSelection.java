@@ -33,12 +33,13 @@ public class DeviceSelection extends Activity {
 		
 		lv = (ListView) findViewById(R.id.device_selection);
 		
-		String[] values = new String[4];
+		String[] values = new String[5];
 		
 		values[0] = getString(R.string.EA30);
 		values[1] = getString(R.string.EM3070);
 		values[2] = getString(R.string.JE222);
 		values[3] = getString(R.string.JE227);
+		values[4] = getString(R.string.JE227Serial);
 		
 		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, android.R.id.text1, values);
 		lv.setAdapter(adapter);

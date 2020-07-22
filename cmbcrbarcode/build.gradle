@@ -23,8 +23,8 @@ android {
         targetSdkVersion 28
         versionCode 1
         // versionName shows as the "api version" in app and "version" is setup
-        versionName "1.1"
-        version "1.1"
+        versionName "1.5"
+        version "1.5" + ""
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
