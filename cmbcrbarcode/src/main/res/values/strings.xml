@@ -110,8 +110,9 @@
     <string name="received">Received</string>
     <string name="device">Device</string>
     <string name="JE222">Honeywell N5600</string>
-    <string name="JE227">Zebra SE4757</string>
+    <string name="JE227">Zebra SE4757 USB</string>
     <string name="JE227Serial">Zebra SE4757 SSI</string>
+    <string name="SE4750">Zebra SE4750 CSI</string>
     <string name="EA30">Intermec EA30</string>
     <string name="EM3070">Newland EM3070</string>
     <string name="disable_decode_data">Disable Decode Data</string>
