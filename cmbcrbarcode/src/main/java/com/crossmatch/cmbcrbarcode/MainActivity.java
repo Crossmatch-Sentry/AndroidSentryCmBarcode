@@ -264,8 +264,8 @@ public class MainActivity extends Activity implements OnClickListener {
 		if (device.equals(getString(R.string.JE227Serial))) {
 			lb = new LibBarcode(this, Devices.BARCODE_JE227_SERIAL);
 		}
-		if (device.equals(getString(R.string.SE4750))) {
-			lb = new LibBarcode(this, Devices.BARCODE_SE4750);
+		if (device.equals(getString(R.string.SE4757))) {
+			lb = new LibBarcode(this, Devices.BARCODE_SE4757);
 		}
 		btnDevice.setText(device);
 		
